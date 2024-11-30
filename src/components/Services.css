@@ -1,2 +1,110 @@
-
+/* Container for the services section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #050505, #74c9f3); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
   
+  /* Heading Style */
+  .services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  /* Flexbox banner for responsive grid */
+  .service-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Each service item style */
+  .service-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Service Title */
+  .service-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .service-item:hover h3 {
+    color: #3a8dff; /* Change title color on hover */
+  }
+  
+  /* Style for the images inside service items */
+  .image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  /* Zoom effect on image hover */
+  .service-item:hover .service-image {
+    transform: scale(1.05);
+  }
+  
+  /* Text animation on service item hover */
+  .service-description {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .service-item:hover .service-description {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .services h2 {
+      font-size: 2rem;
+    }
+  
+    .service-banner {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .service-item {
+      max-width: 320px;
+    }
+  }
