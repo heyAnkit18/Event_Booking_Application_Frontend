@@ -1,2 +1,104 @@
-
+.contact {
+    padding: 50px 20px;
+    background: #ffffff;
+    color: #333333;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .info-item {
+    flex: 1;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .info-item h4 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #007bff;
+  }
+  
+  .info-item p {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .item {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .item form {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  iframe {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .info-row {
+      flex-direction: column;
+    }
+  
+    .banner {
+      grid-template-columns: 1fr;
+    }
+  }
   
