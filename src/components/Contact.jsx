@@ -42,7 +42,7 @@ const Contact = () => {
       <div className="info-row">
         <div className="info-item">
           <h4>Address</h4>
-          <p>EventBliss Palace in Jodhpur, Rajasthan. Pincode - 342006</p>
+          <p>MomentFlow Palace in Jodhpur, Rajasthan. Pincode - 342006</p>
         </div>
         <div className="info-item">
           <h4>Call Us</h4>
@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
         <div className="info-item">
           <h4>Mail Us</h4>
-          <p>EventBliss@gmail.com</p>
+          <p>MomentFlow@gmail.com</p>
         </div>
       </div>
 
@@ -93,7 +93,7 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <button type="submit">Send Message</button>
+            <button type="submit">Book Now</button>
           </form>
         </div>
       </div>
