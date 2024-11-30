@@ -1,0 +1,46 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1e1e2f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6f61;
+    cursor: pointer; 
+  }
+  .navLinks .links {
+    display: flex;
+    gap: 20px;
+  }
+  .navLinks .links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; 
+  }
+  .navLinks .links a:hover {
+    color: #ff6f61;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .navLinks .links {
+      flex-direction: column;
+      gap: 15px;
+      display: none; 
+    }
+  
+    /* Add a dropdown or toggle functionality here later */
+  }
+  
