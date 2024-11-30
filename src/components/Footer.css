@@ -53,3 +53,9 @@
       width: 100%;
     }
   }
+  .thank-you-message {
+    margin-top: 10px;
+    color: #28a745; /* Green color for success message */
+    font-weight: bold;
+  }
+  

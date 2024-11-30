@@ -80,6 +80,7 @@
   text-decoration: none;
   border-radius: 30px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
