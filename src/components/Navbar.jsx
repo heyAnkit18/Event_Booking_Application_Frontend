@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./Navbar.css"; 
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="logo">MomentFlow</div>
-      <div className="navLinks">
+      <div className={`navLinks ${show ? "showmenu" : ""}`}>
         <div className="links">
           <Link to="hero" spy={true} smooth={true} duration={500}>
             HOME
@@ -22,8 +25,12 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      <div className="hamburger" onClick={() => setShow(!show)}>
+        <GiHamburgerMenu />
+      </div>
     </nav>
   );
 };
 
 export default Navbar;
+
