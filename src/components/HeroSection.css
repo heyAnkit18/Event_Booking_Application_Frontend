@@ -1,200 +1,100 @@
 .hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-  }
-  
-  .hero-image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    filter: brightness(50%); 
-    transition: all 0.3s ease;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-  }
-  
-  .hero:hover .hero-image {
-    filter: brightness(70%); 
-  }
-  
-  .hero:hover .hero-overlay {
-    background: rgba(0, 0, 0, 0.4); 
-  }
-  
-  .hero-content {
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    z-index: 2;
-    padding: 20px;
-  }
-  
-  .hero-content h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  transition: all 0.3s ease;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero:hover .hero-image {
+  filter: brightness(70%);
+}
+
+.hero-content {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-content h3,
+.hero-content h1,
+.hero-content p {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hero-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation-delay: 0.5s;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation-delay: 1s;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  animation-delay: 1.5s;
+}
+
+.hero-content .highlight {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 12px 30px;
+  background-color: #3b2efc;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 0.5s;
+    transform: translateY(20px);
   }
-  
-  .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 1s;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-    opacity: 0;
-    animation: fadeIn 1.8s ease-out forwards;
-    animation-delay: 1.5s;
-  }
-  
-  .hero-content .highlight {
-    color: #38bdf8;
-    font-weight: bold;
-  }
-  .btn {
-    padding: 12px 30px;
-    background-color: #3b2efc;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    display: inline-block;
-  }
-  
-  .btn:hover {
-    background-color: #2563eb; 
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
-    cursor: pointer;
-  }
-  .hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-  }
-  
-  .hero-image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    filter: brightness(50%); 
-    transition: all 0.3s ease;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-  }
-  
-  .hero:hover .hero-image {
-    filter: brightness(70%); 
-  }
-  
-  .hero:hover .hero-overlay {
-    background: rgba(0, 0, 0, 0.4); 
-  }
-  
-  .hero-content {
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    z-index: 2;
-    padding: 20px;
-  }
-  
-  .hero-content h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 0.5s;
-  }
-  
-  .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 1s;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-    opacity: 0;
-    animation: fadeIn 1.8s ease-out forwards;
-    animation-delay: 1.5s;
-  }
-  
-  .hero-content .highlight {
-    color: #38bdf8;
-    font-weight: bold;
-  }
-  .btn {
-    padding: 12px 30px;
-    background-color: #3b2efc;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    display: inline-block;
-  }
-  
-  .btn:hover {
-    background-color: #2563eb; 
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
-    cursor: pointer;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}
