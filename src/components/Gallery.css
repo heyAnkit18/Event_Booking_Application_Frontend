@@ -36,4 +36,11 @@
     display: block;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
   
+  .gallery-item:hover img {
+    filter: brightness(80%);
+    transform: scale(1.1);
+  }
