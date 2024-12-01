@@ -8,6 +8,7 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <HeroSection />
       <Services />
       <About />
+      <Gallery/>
       <Contact />
       <Footer />
       <Toaster />
