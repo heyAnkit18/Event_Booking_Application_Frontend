@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
-import "./Navbar.css"; 
+import "./Navbar.css";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -19,6 +19,9 @@ const Navbar = () => {
           </Link>
           <Link to="about" spy={true} smooth={true} duration={500}>
             ABOUT
+          </Link>
+          <Link to="gallery" spy={true} smooth={true} duration={500}>
+            GALLERY
           </Link>
           <Link to="contact" spy={true} smooth={true} duration={500}>
             CONTACT
